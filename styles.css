@@ -93,6 +93,10 @@ input:focus {
 .main-btn:focus::after {
   opacity: 1;
 }
+.centered-content {
+    text-align: center !important;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -161,6 +165,14 @@ input:focus {
     border: 3px solid #0195ff;
     box-shadow: 0 2px 8px #13c7bb33;
     margin-bottom: 1em;
+}
+.dash-avatar:hover {
+    box-shadow: 0 2px 24px #0195ff55;
+    transform: translateY(-3px) scale(1.019);
+}
+.dash-profile:hover {
+    box-shadow: 0 2px 24px #0195ff55;
+    transform: translateY(-3px) scale(1.019);
 }
 .card-container {
     display: grid;
