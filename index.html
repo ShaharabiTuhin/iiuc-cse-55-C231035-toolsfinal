@@ -20,13 +20,13 @@
     <div class="center">
         <div class="auth-box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/PngItem_5916871.png" alt="IIUC Logo" style="width: 64px;margin-bottom:12px;">
-            <h2 style="color:#0195ff;margin:0;">IIUC</h2>
-            <span class="sub-head">Course Tracker</span>
+            <h2 style="color:#640606;margin:0;">IIUC <span style="color:#0d30a0;" class="sub-head">Course</span> <span style="color:#00603a;" class="sub-head">Tracker</span></h2>
+            
             <div style="font-size:.97em;color:#333;margin-bottom:1.5em">International Islamic University Chittagong</div>
             <h3 style="margin-bottom: 1em;font-weight:600;">Student Login</h3>
             <form id="loginForm" autocomplete="off">
                 <label for="email">IIUC Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="student@iiuc.ac.bd">
+                <input type="email" id="email" name="email" required placeholder="student_id@iiuc.ac.bd">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required placeholder="Enter your password">
                 <div style="margin:.6em 0 1.2em 0;">
@@ -37,14 +37,14 @@
             </form>
             <div id="loginError" style="color:#e11d48;margin-top:1em;display:none;">Invalid credentials</div>
             <div style="margin-top:1.2em;font-size:.95em;color:#444;">
-                Need help? Contact IT Support at it@iiuc.ac.bd
+                Need help?<br>Contact IT Support at <span style="color:#0d30a0;" class="sub-head"><u>it@iiuc.ac.bd</u></span>
             </div>
         </div>
     </div>
     <script>
         // Predefined credentials
-        const validEmail = "student@iiuc.ac.bd";
-        const validPass = "student123";
+        const validEmail = "C231035@iiuc.ac.bd";
+        const validPass = "123";
         document.getElementById('loginForm').onsubmit = function(e) {
             e.preventDefault();
             let eVal = document.getElementById('email').value.trim();
