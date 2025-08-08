@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>IIUC Course Tracker - Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Video Background -->
     <div class="video-bg-wrapper">
-      <iframe
-        class="video-bg-iframe"
-        src="https://www.youtube.com/embed/rsFm44ZnclE?autoplay=1&controls=0&mute=1&loop=1&playlist=rsFm44ZnclE&modestbranding=1&enablejsapi=1&showinfo=0&rel=0"
-        frameborder="0"
-        allow="autoplay"
-        allowfullscreen
-        tabIndex="-1"
-      ></iframe>
+        <iframe class="video-bg-iframe"
+            src="https://www.youtube.com/embed/rsFm44ZnclE?autoplay=1&controls=0&mute=1&loop=1&playlist=rsFm44ZnclE&modestbranding=1&enablejsapi=1&showinfo=0&rel=0"
+            frameborder="0" allow="autoplay" allowfullscreen tabIndex="-1"></iframe>
     </div>
     <div class="navbar">
-        <div class="logo"><img class="minilogo" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/PngItem_5916871.png" alt="iiuc"> IIUC Course Tracker</div>
+        <div class="logo">
+            <img class="minilogo" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/PngItem_5916871.png"
+                alt="iiuc">
+            <span class="logo-text">
+                <span style="color:#640606;">IIUC</span>
+                <span style="color:#0d30a0;"> Course</span>
+                <span style="color:#00603a;"> Tracker</span>
+            </span>
+        </div>
         <div class="nav-profile">
-            <img class="profile-icon" src="https://mir-s3-cdn-cf.behance.net/user/276/7bb3991623324013.65ab99587e82d.jpg" alt="Profile">
+            <img class="profile-icon"
+                src="https://mir-s3-cdn-cf.behance.net/user/276/7bb3991623324013.65ab99587e82d.jpg" alt="Profile">
             <button class="logout-btn" onclick="logout()">Log Out</button>
         </div>
     </div>
+
     <div class="dash-profile">
-        <img class="dash-avatar" src="https://mir-s3-cdn-cf.behance.net/user/276/7bb3991623324013.65ab99587e82d.jpg" alt="Student Avatar">
-        <h3 style="text-align: center;">Welcome back, Student!</h3>
-        <span style="color:#555; font-size:.95em;">Here's an overview of your enrolled courses for this semester.</span>
+        <img class="dash-avatar" src="https://mir-s3-cdn-cf.behance.net/user/276/7bb3991623324013.65ab99587e82d.jpg"
+            alt="Student Avatar">
+        <div style="text-align: center;">
+    <h3>Welcome back, <span style="color:#0b68c5;" class="sub-head">Shaharabi Tuhin</span></h3>
+            <h4 style="color: #00603a; margin-top:0; margin-bottom: 4px; font-weight: 600;">
+                C231035 - 55 Batch (5AM) - Department of CSE, IIUC
+            </h4>
+            <span style="color:#555; font-size:.95em; display: block; margin-top: 0;">
+                Here's an overview of your enrolled courses for this semester.
+            </span>
+        </div>
+
         <div style="display:flex;justify-content:center;gap:2.5em;margin:2em 0;">
             <div style="text-align:center;">
                 <div style="font-size:2em;font-weight:700;">6</div>
@@ -59,7 +75,8 @@
             <div class="card-head"><span class="tag math">MAT 201</span> Mathematics</div>
             <div class="card-title">Calculus II</div>
             <div class="card-ins">Prof. Sarah Khan</div>
-            <div class="card-des">Advanced calculus including integration techniques, series, and differential equations.</div>
+            <div class="card-des">Advanced calculus including integration techniques, series, and differential
+                equations.</div>
             <div class="card-footer">16 weeks | 85 students | 4 credits</div>
         </div>
         <div class="course-card" onclick="window.location.href='course.html';" style="cursor:pointer;">
@@ -125,4 +142,5 @@
         }
     </script>
 </body>
+
 </html>

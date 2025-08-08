@@ -11,6 +11,11 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+.auth-box:hover {
+    box-shadow: 10 10px 15px #13c7bb27;
+    box-shadow: 0 2px 24px #005c9e55;
+    transform: translateY(-3px) scale(1.019);
+}
 .auth-box {
     background: #fff;
     box-shadow: 0 2px 16px #0002;
@@ -88,12 +93,12 @@ input:focus {
 .main-btn:focus::after {
   opacity: 1;
 }
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 2em;
+    /* justify-content: center; */
+    padding: 0.5em 4em;
     background: #fff;
     box-shadow: 0 2px 12px #0001;
     position: relative;
@@ -103,7 +108,7 @@ input:focus {
     color: #0195ff;
     font-weight: bold;
     font-size: 1.5em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .nav-profile {
     display: flex;
@@ -135,6 +140,9 @@ input:focus {
     color: #fff;
 }
 .dash-profile {
+    /* display: flex;
+    justify-content: center;
+    vertical-align: middle; */
     background: #fff;
     padding: 2em 2em 1.5em 2em;
     box-shadow: 0 2px 14px #0001;
@@ -146,8 +154,8 @@ input:focus {
     z-index: 2;
 }
 .dash-avatar {
-    width: 85px;
-    height: 85px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #0195ff;
@@ -277,7 +285,11 @@ body > *:not(.video-bg-wrapper) {
     position: relative;
     z-index: 2;
 }
-.minilogo{
+.minilogo {
     width: 30px;
-    padding: none;
+    height: 30px;          /* Add height to keep it square */
+    object-fit: contain;   /* Ensures image isn't stretched */
+    padding: 0;            /* Remove any default padding */
+    display: inline-block; /* Aligns with text better */
+    vertical-align: middle;/* Extra vertical alignment, if needed */
 }
